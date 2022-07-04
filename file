@@ -1,0 +1,9 @@
+  private static String removeBlank(String text) {
+        if (Objects.equals(text, "") ||
+                Objects.equals(text, "null") ||
+                text == null ||
+                text.isEmpty()) {
+            return "-";
+        }
+        return text;
+    }
