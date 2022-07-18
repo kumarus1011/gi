@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pool Page</title>
+    <link href="pool.css" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 col-md-offset-3 ">
+            <div class="panel panel-primary">
+                <div class="panel-heading">Add Pool</div>
+                <div class="panel-body">
+                    <form method="post" modelAttribute="pool">
+                        <form path="id"/>
+                        <fieldset class="form-group">
+                            <label path="poolId">Pool Id</label>
+                            <input class="form-control" path="poolId" required="required" type="text"/>
+
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label path="issueDate">Issue Date</label>
+                            <input class="form-control" path="issueDate" required="required" type="date"/>
+
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label path="poolClass">Pool Class</label>
+                            <input class="form-control" path="poolClass" required="required" type="text"/>
+
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <label path="poolStructure">Pool Structure</label>
+                            <input class="form-control" path="poolStructure" required="required" type="text"/>
+
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label path="poolSuffix">Pool Suffix</label>
+                            <input class="form-control" path="poolSuffix" required="required" type="text"/>
+
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label path="isLoan">#Loan</label>
+                            <input class="form-control" path="isLoan" required="required" type="text"/>
+
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label path="status">Status</label>
+                            <input class="form-control" path="status" required="required" type="text"/>
+
+                        </fieldset>
+                        <fieldset class="form-group">
+                            <label path="busRules">Bus. Rules</label>
+                            <input class="form-control" path="busRules" required="required" type="text"/>
+
+                        </fieldset>
+
+                        <button class="btn btn-success" type="submit">Save</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
